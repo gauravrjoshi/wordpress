@@ -1,9 +1,10 @@
 <?php
 //Wordpress User Meta functions.
-add_user_meta() 
-update_user_meta() 
-delete_user_meta() 
-get_user_meta()
+add_user_meta( int $user_id, string $meta_key, mixed $meta_value, bool $unique = false )
+update_user_meta( int $user_id, string $meta_key, mixed $meta_value, mixed $prev_value = '' )
+delete_user_meta( int $user_id, string $meta_key, mixed $meta_value = '' )
+get_user_meta( int $user_id, string $key = '', bool $single = false )
+
   
 //Wordpress Post Meta functions.
 add_post_meta( int $post_id, string $meta_key, mixed $meta_value, bool $unique = false )
